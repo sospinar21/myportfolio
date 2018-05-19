@@ -1,0 +1,179 @@
+/* transition: width .5s cubic-bezier(0.01, 0.74, 0.4, 1), height .5s .5s cubic-bezier(0.01, 0.74, 0.4, 1), background .3s linear; */
+.portfolio {
+padding: 5vh;
+box-sizing: border-box;
+margin: auto;
+background-color: #d3d3d326;
+width: 92%;
+padding-top: 14vh !important;
+overflow: hidden;
+}
+
+.e-book {
+width: 95%;
+margin: auto;
+background-color: black;
+height: 80vh;
+margin-bottom: 5vh;
+background-image: url('./../../assets/e-book.png');
+background-size: cover;
+box-shadow: 2px 0px 20px #cecccc;  
+}
+
+.e-book-desc {
+width: 95%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20vh; 
+}
+
+.small-square h3 {
+color: white;
+margin: 0;
+}
+
+video {
+width: 100%;
+height: 100%;
+}
+
+.small-square {
+flex: 40%;
+background-color: #e63d29;
+padding: 2vh;
+text-align: center;
+box-shadow: 2px 0px 20px #cecccc;  
+}
+
+.small-square p {
+font-size: 2vh;
+color: white;
+}
+
+.big-square {
+flex: 60%;
+margin-left: 4vh;
+box-shadow: 2px 0px 20px #cecccc; 
+}
+
+.arrow {
+color: white;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-align: center;
+align-items: center;
+-ms-flex-pack: center;
+justify-content: center;
+position: absolute;
+top: 45%;
+width: 3.7em;
+height: 9em;
+-ms-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+z-index: 200;
+border: 1px solid #000;
+background: #ffa503;
+border-color: #ffa503;
+text-transform: uppercase;
+font-size: .6875rem;
+font-weight: 700;
+letter-spacing: .1em;
+cursor: pointer;
+transition: all .4s cubic-bezier(.165,.84,.44,1);
+transition: background .4s cubic-bezier(.165,.84,.44,1),color .4s cubic-bezier(.165,.84,.44,1),transform .4s cubic-bezier(.165,.84,.44,1);
+}
+
+.lastProject {
+left: 0;
+transform: translate3d(-20%,0,0);
+border-radius: 0 4em 4em 0;
+}
+
+.nextProject {
+right: .5px;
+transform: translate3d(20%,0,0);
+border-radius: 4em 0 0 4em;
+}
+
+.swapi {
+width: 95%;
+margin: auto;
+justify-content: space-between;
+display: flex;
+margin-bottom: 20vh;
+}
+
+.swapi-desc {
+flex: 60%;
+}
+
+.swapi-pic {
+margin: auto;
+margin-bottom: 4vh;
+background-size: cover; 
+background-repeat: no-repeat; 
+box-shadow: 2px 0px 20px #cecccc;    
+}
+
+.swapi-video {
+display: flex;
+width: 100%;
+justify-content: space-around;
+box-shadow: 2px 0px 20px #cecccc;    
+}
+
+.swapi-text {
+flex: 46%;
+height: 40vh;
+
+}
+
+.swapi-vid {
+background-size: cover;
+background-repeat: no-repeat;
+flex: 100%;
+height: 40vh;
+margin-left: 4vh;
+}
+
+.swapi-phone {
+background-color: orange;
+flex: 30;
+margin-left: 4vh;
+}
+
+.static-comp {
+display: flex;
+justify-content: space-between;
+width: 95%;
+margin: auto;
+height: 63.1vh;
+margin-bottom: 4vh;
+}
+
+.dance-app {
+background-image: url('./../../assets/Screen Shot 2018-05-03 at 7.30.54 AM copy.png');
+flex: 50;
+margin-right: 4vh;
+background-size: contain; 
+background-repeat: no-repeat;
+box-shadow: 2px 0px 20px #cecccc;      
+}
+
+.text {
+flex: 20;
+background-color: white;
+box-shadow: 2px 0px 20px #cecccc;   
+
+}
+
+.dashboard {
+flex: 50;
+background-size: cover; 
+background-repeat: no-repeat;  
+margin-left: 4vh;
+box-shadow: 2px 0px 20px #cecccc; 
+width: 78%;
+
+}
