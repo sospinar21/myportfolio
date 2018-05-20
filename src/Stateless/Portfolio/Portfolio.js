@@ -15,12 +15,14 @@ export const eBook = () => {
         <section className='e-book-desc'>
           <article className='small-square'>
             <h3>Pocket Book</h3>
-            <p>A place to store notes, snippets and links</p>
-            <p>First place Code Fair</p>
+            <p>This is app was built for students to import their lessons, save notes, links and documents. </p>
+            <br/>
+            <p> Built with: <b> React, React-Router, Redux and Firebase </b></p>
+            <h4>Winner of 2018 Turing code fair</h4>
           </article>
           <article className='big-square'>   
             <video autoPlay muted loop >
-              <source src={ebook} type="video/mp4"/>
+              <source src={ebook} type='video/mp4'/>
             </video>
           </article>          
         </section>
@@ -38,17 +40,24 @@ export const swapi = () => {
       <div className='portfolio'>
         <section className='swapi'>
           <article className='swapi-desc'>
-            <article className='swapi-pic'>
-              <video autoPlay muted loop id="myVideo">
-                <source src={starWars} type="video/mp4"/>
+            <article className='swapi-vid'>
+              <video autoPlay muted loop id='myVideo'>
+                <source src={starWars} type='video/mp4'/>
               </video>          
-
             </article>
-            <article className='swapi-video'>
-              <article className='swapi-text'/>           
+            <article>
+              <article className='swapi-info'>
+                <article className='swapi-text'>
+                  <h3>Swapi-Box</h3>
+                  <p>This project was built with <b> React/ React-Router, Redux</b> using the Starwars Api</p>
+                </article>           
+                <article className='swapi-t'> 
+                  <p>An individual project for a Star Wars trivia site. User can select a category of trivia they'd like to see, select favorites, and view favorites on a seperate screen. </p>
+                </article> 
+              </article>
             </article>
-            <article className='swapi-vid'/> 
           </article>
+          <article className='swapi-phone' /> 
         </section>
       </div>
       <NavLink to='/portfolio/ebook' className='lastProject arrow'><a>Last</a></NavLink>
@@ -64,12 +73,15 @@ export const staticComp = () => {
       <div className='portfolio'>
         <section className='static-comp'>
           <article className='dance-app'/>
-          <article className='text'/>
+          <article className='text'> 
+            <h3>Design and UX</h3>
+            <p>Projects built with <b>CSS grid and FlexBox</b></p>
+          </article>
         </section>
         <section className='static-comp'>
-          <article className='text'/>
-          <video className='dashboard' autoPlay muted loop id="myVideo">
-            <source src={dashboard} type="video/mp4"/>
+          <article className='dashb'/>
+          <video className='dashboard' autoPlay muted loop id='myVideo'>
+            <source src={dashboard} type='video/mp4'/>
           </video>  
         </section>
       </div>

@@ -25,7 +25,7 @@ width: 95%;
 margin: auto;
 display: flex;
 justify-content: space-between;
-margin-bottom: 20vh; 
+margin-bottom: 5vh; 
 }
 
 .small-square h3 {
@@ -40,21 +40,48 @@ height: 100%;
 
 .small-square {
 flex: 40%;
-background-color: #e63d29;
-padding: 2vh;
+padding: 3vh 2vw;
 text-align: center;
-box-shadow: 2px 0px 20px #cecccc;  
+box-shadow: 2px 0px 20px #cecccc;
 }
 
-.small-square p {
-font-size: 2vh;
-color: white;
+.portfolio h3 {
+font-size: 3vw;
+color: #9E9E9E; 
+font-weight: 300;
+margin-bottom: 3vh;
+}
+
+.portfolio h4 {
+  font-size: 2vw;
+  margin-top: 3vh;
+  color: #9E9E9E; 
+font-weight: 300;
+letter-spacing: .2px;
+   
+  }
+
+.portfolio li {
+font-size: 1.5vw;
+list-style-type: none;
+color: #9E9E9E;
+letter-spacing: .4px;
+
+}
+
+.portfolio p {
+font-size: 18px;
+color: #9E9E9E; 
+line-height: 2;
+word-spacing: 0;
+margin:0;
 }
 
 .big-square {
 flex: 60%;
 margin-left: 4vh;
-box-shadow: 2px 0px 20px #cecccc; 
+box-shadow: 2px 0px 20px #cecccc;
+height: max-content; 
 }
 
 .arrow {
@@ -65,7 +92,7 @@ display: flex;
 align-items: center;
 -ms-flex-pack: center;
 justify-content: center;
-position: absolute;
+position: fixed;
 top: 45%;
 width: 3.7em;
 height: 9em;
@@ -101,14 +128,14 @@ width: 95%;
 margin: auto;
 justify-content: space-between;
 display: flex;
-margin-bottom: 20vh;
+margin-bottom: 5vh;
 }
 
 .swapi-desc {
-flex: 60%;
+flex: 70%;
 }
 
-.swapi-pic {
+.swapi-vid {
 margin: auto;
 margin-bottom: 4vh;
 background-size: cover; 
@@ -116,31 +143,42 @@ background-repeat: no-repeat;
 box-shadow: 2px 0px 20px #cecccc;    
 }
 
-.swapi-video {
+.swapi-info {
 display: flex;
 width: 100%;
 justify-content: space-around;
-box-shadow: 2px 0px 20px #cecccc;    
 }
 
 .swapi-text {
 flex: 46%;
-height: 40vh;
-
+padding: 4vh;
+box-shadow: 2px 0px 20px #cecccc;    
 }
 
-.swapi-vid {
+.swapi-text h3 {
+  margin:0;
+}
+
+.swapi-t {
 background-size: cover;
 background-repeat: no-repeat;
-flex: 100%;
-height: 40vh;
+flex: 50%;
 margin-left: 4vh;
+box-shadow: 2px 0px 20px #cecccc;
+padding: 5vh;
+box-sizing: border-box;
+}
+
+.swapi-t p{
+  line-height: 2;
 }
 
 .swapi-phone {
-background-color: orange;
+background-size: contain;
+background-repeat: no-repeat;
 flex: 30;
 margin-left: 4vh;
+background-image: url('./../../assets/swapi-mob.png')
 }
 
 .static-comp {
@@ -148,7 +186,7 @@ display: flex;
 justify-content: space-between;
 width: 95%;
 margin: auto;
-height: 63.1vh;
+height: auto;
 margin-bottom: 4vh;
 }
 
@@ -156,16 +194,19 @@ margin-bottom: 4vh;
 background-image: url('./../../assets/Screen Shot 2018-05-03 at 7.30.54 AM copy.png');
 flex: 50;
 margin-right: 4vh;
-background-size: contain; 
+background-size: cover; 
 background-repeat: no-repeat;
-box-shadow: 2px 0px 20px #cecccc;      
+box-shadow: 2px 0px 20px #cecccc;
+background-color: #000;      
 }
 
 .text {
+  box-sizing: border-box;
+  padding: 4vh;
 flex: 20;
 background-color: white;
-box-shadow: 2px 0px 20px #cecccc;   
-
+box-shadow: 2px 0px 20px #cecccc;
+height: 30vw;   
 }
 
 .dashboard {
@@ -176,4 +217,11 @@ margin-left: 4vh;
 box-shadow: 2px 0px 20px #cecccc; 
 width: 78%;
 
+}
+
+.dashb {
+flex: 20;  
+  background-image: url('./../../assets/dash-mob.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
