@@ -56,7 +56,6 @@ const Main = () => {
   };
 
   window.onload = animation;
-  window.onclick = animation;
   
   return (
     <div>
@@ -65,7 +64,7 @@ const Main = () => {
         <div className='wrapper'>
           <div className='myInfo'>
             <h4>About Me.</h4>
-            <p><b>A software developer</b> looking to help drive technical strategy, product development and go to market, and to help customers leverage said products to further their business goals.</p>   
+            <p>Business oriented, tech driven <b>software developer</b> with a passion for designing and building solutions that make life easier for businesses and consumers.</p>   
           </div>    
           <h1>Stephanie Ospina</h1>
           <h2>

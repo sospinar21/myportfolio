@@ -6,6 +6,9 @@ const Resume = () => {
   return (
     <div>
       <Buttons />
+      <div className='resume-container'>
+        <div className='resume'/>
+      </div>
     </div>
   )
 }

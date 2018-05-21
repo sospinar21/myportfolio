@@ -15,7 +15,7 @@ export const eBook = () => {
         <section className='e-book-desc'>
           <article className='small-square'>
             <h3>Pocket Book</h3>
-            <p>This is app was built for students to import their lessons, save notes, links and documents. </p>
+            <p>This app was built for students to import their lessons, save notes, links and documents. </p>
             <br/>
             <p> Built with: <b> React, React-Router, Redux and Firebase </b></p>
             <h4>Winner of 2018 Turing code fair</h4>
@@ -52,7 +52,7 @@ export const swapi = () => {
                   <p>This project was built with <b> React/ React-Router, Redux</b> using the Starwars Api</p>
                 </article>           
                 <article className='swapi-t'> 
-                  <p>An individual project for a Star Wars trivia site. User can select a category of trivia they'd like to see, select favorites, and view favorites on a seperate screen. </p>
+                  <p>An individual project for a Star Wars site. User can select a category of trivia they'd like to see, select favorites, and view favorites on a seperate screen. </p>
                 </article> 
               </article>
             </article>
