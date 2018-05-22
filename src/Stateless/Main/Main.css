@@ -55,7 +55,7 @@ header {
     box-sizing: border-box;
   }
 
-h1, h2, h3, h4, p, li, a{
+h1, h2, h3, h4, h5, p, li, a{
   font-family: 'Lato', sans-serif;   
 }
 
@@ -168,30 +168,77 @@ h3 {
   }
 
   .contact-top {
+    display: flex;
     background: black;
-    height: 50vh;
+    height: 47vh;
+  }
+
+  .pic-steph {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./../../assets/steph.jpg');
   }
 
   .contact-bottom {
     height: 50vh;
     cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
-    background-color: red;
+    background-color: grey;
   }
 
   .contact-wrapper {
-    padding: 10vh 0;
-    background-color: #1c1f24;
+    height: 85vh;
+    padding: 8vh 0;
+    background-color: black;
+    overflow-y: hidden;
   }
 
   .contact-wrapper h2, h1{
-    margin: 0;
+    margin: 7vh 12vh;
   }
 
   .black-bgn {
-    margin-top: -10vh;
-    height: 100%;
-    background-color: #000000a6;
-    position: absolute;
+    height: -webkit-fill-available;
+    background-color: #00000094;
+    position: unset;
     z-index: 40;
     width: 100%;
+  }
+
+  .left-box {
+    text-align: left;
+    width: 50%;
+  }
+
+  .contact-info {
+    margin-left: 50%;
+    background-color: #000000c7;
+    padding: 3.4vh;
+    position: absolute;
+    z-index: 32;
+    margin-top: -50vh;
+    display: flex;
+    box-shadow: 2px -2px 0px black;
+  }
+
+  .contact-info h5 {
+    color: white;
+    font-size: 2.3vh;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    padding: 5vw;
+    height: fit-content;
+    color: orange;
+    font-size: 50px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    margin-top: 2vh;
+  }
+
+  .my-info {
+    padding: 0 7vh;
+    margin-left: 10vh;
+    border-left: 1px solid orange;
   }
