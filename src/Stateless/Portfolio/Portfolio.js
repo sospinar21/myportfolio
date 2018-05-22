@@ -5,12 +5,18 @@ import Buttons from '../Buttons/Buttons';
 import ebook from '../../assets/e-book.mp4';
 import starWars from '../../assets/starwars copy.mov';
 import dashboard from '../../assets/ubs copy.mov';
+import { Redux, ReactLogo, Firebase } from '../../assets/logos'
 
 export const eBook = () => {
   return (
     <div>
       <Buttons />
       <div className='portfolio'>
+        <div className='dev-logo-container'>
+          <Redux />
+          <ReactLogo />
+          <Firebase />
+        </div>
         <section className='e-book'/>
         <section className='e-book-desc'>
           <article className='small-square'>
@@ -38,6 +44,10 @@ export const swapi = () => {
     <div>
       <Buttons />
       <div className='portfolio'>
+        <div className='dev-logo-container'>
+          <ReactLogo />
+          <Firebase />
+        </div>
         <section className='swapi'>
           <article className='swapi-desc'>
             <article className='swapi-vid'>

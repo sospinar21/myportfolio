@@ -96,7 +96,7 @@ color: #ffa503;
   }
 
   .arrow a {
-    transform: rotate(90deg) translate3d(-25%,100%,0);
+    list-style: none;
   }
   
  .nav:hover {
@@ -241,4 +241,33 @@ h3 {
     padding: 0 7vh;
     margin-left: 10vh;
     border-left: 1px solid orange;
+  }
+
+  .lastProject a {
+    transform: rotate(271deg) translate3d(3%,50%,0)
+  }
+
+  .nextProject a {
+    transform: rotate(90deg) translate3d(2%,60%,0)
+  }
+
+  .dev-logos {
+    height: 5vh;
+    width: 5vh;
+  }
+
+  .dev-logo-container {
+    display: flex;
+    height: 5vh;
+    padding: 0 7vh 3vh;
+  }
+
+  .react {
+    margin: -7px 2vh;
+    box-sizing: border-box;
+    width: 10vh;
+  }
+
+  .fire {
+    margin-top: -1.2vh;
   }
