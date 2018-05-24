@@ -15,14 +15,20 @@ background-color: hsla(0,0%,0%,0.4);
 
  .wrapper {
   height: 83vh;
-  position: absolute;
   padding-top: 9vh;
   background-color: #00000096;
   width: 100%;
+  position: absolute;
+}
+
+.info-container {
+  position: absolute;
+  padding-top: 10vh;
+  width: 60%;
 }
 
 .myInfo {
-  width: 35%;
+  width: 50%;
   margin: auto;
 }
 
@@ -69,7 +75,7 @@ h1 {
   color: #fff;
   opacity: .85;
   margin: 8vh;
-  font-size: 8vw;
+  font-size: 6vw;
   line-height: 1em;
   position: relative;
   z-index: 2;
@@ -80,10 +86,39 @@ h1 :after, :before {
   -webkit-font-smoothing: antialiased!important;
 }
 
+.pic-container {
+  width: 50%;
+  height: 91vh;
+  position: absolute;
+  background-color: red;
+  z-index: 20;
+  margin-left: 51%;
+}
+
+.main-container {
+  display: flex;
+  background-color: hsla(0,0%,0%,0.4);
+ box-shadow: 2px 2px blanchedalmond;
+ background-size: 100vw 100vh;
+ background-repeat: no-repeat;
+ text-align: center;
+ height: 92vh;
+ box-shadow: 2px 2px white;
+ background-image: url('https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png') 
+}
+
+.pic1, .pic2, .pic3 {
+  background: rgba(25,27,29,.6);
+  border-radius: 3px;
+  padding: 30px;
+  transition: all .3s ease-in-out;
+}
+
 h2 {
 margin-left: 8vh;
 font-size: 50px;
 color: #ffa503;
+height: 8vh;
 }
 
 .nav {
@@ -150,6 +185,7 @@ h3 {
   background-image: url('./../../assets/linkedin.png');
   background-size: contain;
   background-repeat: no-repeat;
+  height: 6vh !important;
 }
   
   .email {
@@ -216,7 +252,7 @@ h3 {
     padding: 3.4vh;
     position: absolute;
     z-index: 32;
-    margin-top: -50vh;
+    margin-top: -45vh;
     display: flex;
     box-shadow: 2px -2px 0px black;
   }
@@ -270,4 +306,9 @@ h3 {
 
   .fire {
     margin-top: -1.2vh;
+  }
+
+  iframe {
+    width: 100vw;
+    height: inherit;
   }

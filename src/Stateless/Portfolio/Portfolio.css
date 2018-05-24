@@ -69,12 +69,18 @@ letter-spacing: .4px;
 
 }
 
-.portfolio p {
+.portfolio p, .link{
 font-size: 18px;
 color: #9E9E9E; 
 line-height: 2;
 word-spacing: 0;
 margin:0;
+}
+
+.disable{
+  background: moccasin !important;
+  border: darkgrey !important;
+  cursor: default !important;
 }
 
 .big-square {
@@ -224,4 +230,8 @@ flex: 20;
   background-image: url('./../../assets/dash-mob.png');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.social li {
+  cursor: pointer;
 }

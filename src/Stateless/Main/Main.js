@@ -59,27 +59,36 @@ const Main = () => {
   
   return (
     <div>
-      <section className='firstSection' id='intro'>
-        <div className='pic' />
-        <div className='wrapper'>
-          <div className='myInfo'>
-            <h4>About Me.</h4>
-            <p>Business oriented, tech driven <b>software developer</b> with a passion for designing and building solutions that make life easier for businesses and consumers.</p>   
-          </div>    
-          <h1>Stephanie Ospina</h1>
-          <h2>
-            <span
-              className='txt-rotate'
-              data-period='2000'
-              data-rotate='[ "Full Stack Developer", "Web Designer", "Artist" ]'/>
-          </h2>
-          <ul className='social'>
-            <li className='linkedin'/>
-            <li className='github'/>
-            <li className='email'/>  
-          </ul>
-        </div>
-      </section>
+      <div className='main-container'>
+        <section className='firstSection' id='intro'>
+          <div className='wrapper'/>
+          <div className='info-container'>
+            <div className='myInfo'>
+              <h4>About Me.</h4>
+              <p>Business oriented, tech driven <b>software developer</b> with a passion for designing and building solutions that make life easier for businesses and consumers.</p>   
+            </div>    
+            <h1>Stephanie Ospina</h1>
+            <h2>
+              <span
+                className='txt-rotate'
+                data-period='2000'
+                data-rotate='[ "Full Stack Developer", "Web Designer", "Artist" ]'/>
+            </h2>
+            <ul className='social'>
+              <a href='https://www.linkedin.com/in/stephanieospina10/' target='blank'><li className='linkedin'/></a>
+              <a href='https://github.com/sospinar21' target='blank'><li className='github'/></a>
+              <a href='https://www.linkedin.com/in/stephanieospina10/' target='blank'><li className='email'/></a>
+              
+            </ul>
+          </div>
+        </section>
+        <section className='pic-container'>
+          <div className='pic1'/>
+          <div className='pic2'/>
+          <div className='pic3'/>
+        
+        </section>
+      </div>
       <Buttons />  
     </div>    
   )

@@ -24,6 +24,7 @@ export const eBook = () => {
             <p>This app was built for students to import their lessons, save notes, links and documents. </p>
             <br/>
             <p> Built with: <b> React, React-Router, Redux and Firebase </b></p>
+            <a className='link' href='https://github.com/sospinar21/e-planner' target='blank'>Link to Repo: https://github.com/sospinar21/e-planner </a>
             <h4>Winner of 2018 Turing code fair</h4>
           </article>
           <article className='big-square'>   
@@ -33,7 +34,7 @@ export const eBook = () => {
           </article>          
         </section>
       </div>
-      <li className='lastProject arrow'><a>Last</a></li>
+      <li className='lastProject arrow disable'><a>Last</a></li>
       <NavLink to='/portfolio/swapi' className='nextProject arrow'><a>Next</a></NavLink>
     </div>
   )
@@ -60,6 +61,8 @@ export const swapi = () => {
                 <article className='swapi-text'>
                   <h3>Swapi-Box</h3>
                   <p>This project was built with <b> React/ React-Router, Redux</b> using the Starwars Api</p>
+                  <a className='link' href='https://github.com/sospinar21/SWAPI-box' target='blank'>Link to Repo: https://github.com/sospinar21/SWAPI-box </a>
+                  
                 </article>           
                 <article className='swapi-t'> 
                   <p>An individual project for a Star Wars site. User can select a category of trivia they'd like to see, select favorites, and view favorites on a seperate screen. </p>
@@ -96,7 +99,7 @@ export const staticComp = () => {
         </section>
       </div>
       <NavLink to='/portfolio/swapi' className='lastProject arrow'><a>Last</a></NavLink>
-      <li className='nextProject arrow'><a>Next</a></li>
+      <li className='nextProject arrow disable'><a>Next</a></li>
     </div>
   )
 }
