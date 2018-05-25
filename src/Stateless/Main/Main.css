@@ -21,10 +21,16 @@ background-color: hsla(0,0%,0%,0.4);
   position: absolute;
 }
 
+.wrapper2 {
+  background-color: #0000001f;
+  height: 100%;
+  width: 100%;
+}
+
 .info-container {
   position: absolute;
-  padding-top: 10vh;
-  width: 60%;
+  padding-top: 9vh;
+  width: 100%;
 }
 
 .myInfo {
@@ -74,8 +80,8 @@ h4 {
 h1 { 
   color: #fff;
   opacity: .85;
-  margin: 8vh;
-  font-size: 6vw;
+  margin: 6vh !important;
+  font-size: 5.5vw;
   line-height: 1em;
   position: relative;
   z-index: 2;
@@ -87,12 +93,13 @@ h1 :after, :before {
 }
 
 .pic-container {
-  width: 50%;
-  height: 91vh;
+  width: 80%;
   position: absolute;
-  background-color: red;
   z-index: 20;
-  margin-left: 51%;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 31% 10%;
+  justify-content: space-between;
 }
 
 .main-container {
@@ -108,18 +115,57 @@ h1 :after, :before {
 }
 
 .pic1, .pic2, .pic3 {
+  width: 30%;
   background: rgba(25,27,29,.6);
   border-radius: 3px;
-  padding: 30px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  height: 26vh;
+  cursor: pointer;
 }
 
-h2 {
-margin-left: 8vh;
-font-size: 50px;
-color: #ffa503;
-height: 8vh;
+.pic1:hover {
+  box-shadow: 0 0 80px 0 rgba(0,0,0,.1);
+  transform: scale(1.1);
 }
+
+.pic2:hover {
+  box-shadow: 0 0 80px 0 rgba(0,0,0,.1);
+  transform: scale(1.1);
+}
+
+.pic3:hover {
+  box-shadow: 0 0 80px 0 rgba(0,0,0,.1);
+  transform: scale(1.1);
+}
+
+
+h2 {
+  margin-left: 8vh;
+  font-size: 82px;
+  color: #ffa503;
+  height: 5vh;
+}
+
+.pic1{
+  background-image: url('./../../assets/e-book.png');
+  background-size: cover;
+}
+
+.pic2{
+  background-image: url('./../../assets/starwrs .png');
+  background-size: cover;
+  
+}
+
+.pic3{
+  background-image: url('./../../assets/movie-tracker.png');
+  background-size: cover;
+  
+
+}
+
 
 .nav {
   font-size: 16px;
@@ -230,12 +276,12 @@ h3 {
   }
 
   .contact-wrapper h2, h1{
-    margin: 7vh 12vh;
+    margin: 13vh 12vh;
   }
 
   .black-bgn {
     height: -webkit-fill-available;
-    background-color: #00000094;
+    background-color: #00000057;
     position: unset;
     z-index: 40;
     width: 100%;

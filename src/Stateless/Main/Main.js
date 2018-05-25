@@ -68,12 +68,12 @@ const Main = () => {
               <p>Business oriented, tech driven <b>software developer</b> with a passion for designing and building solutions that make life easier for businesses and consumers.</p>   
             </div>    
             <h1>Stephanie Ospina</h1>
-            <h2>
+            {/* <h2>
               <span
                 className='txt-rotate'
                 data-period='2000'
                 data-rotate='[ "Full Stack Developer", "Web Designer", "Artist" ]'/>
-            </h2>
+            </h2> */}
             <ul className='social'>
               <a href='https://www.linkedin.com/in/stephanieospina10/' target='blank'><li className='linkedin'/></a>
               <a href='https://github.com/sospinar21' target='blank'><li className='github'/></a>
@@ -83,9 +83,15 @@ const Main = () => {
           </div>
         </section>
         <section className='pic-container'>
-          <div className='pic1'/>
-          <div className='pic2'/>
-          <div className='pic3'/>
+          <div className='pic1'>
+            <div className='wrapper2'/>            
+          </div>
+          <div className='pic2'>
+            <div className='wrapper2'/>            
+          </div>
+          <div className='pic3'>
+            <div className='wrapper2'/>        
+          </div>
         
         </section>
       </div>
