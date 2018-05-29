@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Buttons from '../Buttons/Buttons';
-import MyMapComponent from '../Google/Google';
 import { withRouter } from 'react-router'
 
 const Contact = () => {

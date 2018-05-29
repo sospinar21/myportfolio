@@ -10,7 +10,7 @@ background-color: hsla(0,0%,0%,0.4);
  text-align: center;
  height: 92vh;
  box-shadow: 2px 2px white;
- background-image: url('https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png') ;   
+ background-image: url('./../../assets/Website-Design-Background.png') ;   
  }
 
  .wrapper {
@@ -22,14 +22,14 @@ background-color: hsla(0,0%,0%,0.4);
 }
 
 .wrapper2 {
-  background-color: #0000001f;
+  background-color: #3a6ab129;
   height: 100%;
   width: 100%;
 }
 
 .info-container {
   position: absolute;
-  padding-top: 9vh;
+  padding-top: 5vh;
   width: 100%;
 }
 
@@ -49,6 +49,7 @@ header {
   color: white;
   margin: auto;
   position: fixed;
+  z-index: 99;
   }
 
   .resume {
@@ -56,7 +57,7 @@ header {
     background-image: url('./../../assets/resume.png');
     height: 70vw;
     background-size: contain;
-    width: 60%;
+    width: 55%;
     background-repeat: no-repeat;
     margin: auto; 
     margin-top: 15vh;
@@ -98,7 +99,7 @@ h1 :after, :before {
   z-index: 20;
   display: -ms-flexbox;
   display: flex;
-  margin: 31% 10%;
+  margin: 31% 10% 0;
   justify-content: space-between;
 }
 
@@ -148,13 +149,13 @@ h2 {
   height: 5vh;
 }
 
-.pic1{
+.pic2{
   background-image: url('./../../assets/e-book.png');
   background-size: cover;
 }
 
-.pic2{
-  background-image: url('./../../assets/starwrs .png');
+.pic1{
+  background-image: url('./../../assets/ubsstatic.PNG');
   background-size: cover;
   
 }
@@ -217,7 +218,7 @@ h3 {
   }
 
 .social li {
-  width: 11vh;
+  width: 8vh;
   height: 7vh;
 }
 
@@ -231,7 +232,8 @@ h3 {
   background-image: url('./../../assets/linkedin.png');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 6vh !important;
+  height: 5.6vh !important;
+  margin-top: .7vh;
 }
   
   .email {
@@ -242,11 +244,12 @@ h3 {
 
 .social {
   display: flex;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   width: 25%;
   margin: auto;
   list-style-type: none;
-  margin-bottom: 10vh;
+  margin-top: 7vh;
   }
 
   .contact-top {
@@ -272,7 +275,7 @@ h3 {
     height: 85vh;
     padding: 8vh 0;
     background-color: black;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   .contact-wrapper h2, h1{

@@ -10,7 +10,7 @@ import { Redux, ReactLogo, Firebase } from '../../assets/logos'
 export const eBook = () => {
   return (
     <div>
-      <Buttons />
+    <Buttons />
       <div className='portfolio'>
         <div className='dev-logo-container'>
           <Redux />
@@ -34,16 +34,7 @@ export const eBook = () => {
           </article>          
         </section>
       </div>
-      <li className='lastProject arrow disable'><a>Last</a></li>
-      <NavLink to='/portfolio/swapi' className='nextProject arrow'><a>Next</a></NavLink>
-    </div>
-  )
-}
 
-export const swapi = () => {
-  return (
-    <div>
-      <Buttons />
       <div className='portfolio'>
         <div className='dev-logo-container'>
           <ReactLogo />
@@ -73,17 +64,14 @@ export const swapi = () => {
           <article className='swapi-phone' /> 
         </section>
       </div>
-      <NavLink to='/portfolio/ebook' className='lastProject arrow'><a>Last</a></NavLink>
-      <NavLink to='/portfolio/static' className='nextProject arrow'><a>Next</a></NavLink>
-    </div>
-  )
-}
-
-export const staticComp = () => {
-  return (
-    <div>
-      <Buttons />
+    
       <div className='portfolio'>
+        <section className='static-comp'>
+          <article className='dashb'/>
+          <video className='dashboard' autoPlay muted loop id='myVideo'>
+            <source src={dashboard} type='video/mp4'/>
+          </video>    
+        </section>
         <section className='static-comp'>
           <article className='dance-app'/>
           <article className='text'> 
@@ -91,15 +79,8 @@ export const staticComp = () => {
             <p>Projects built with <b>CSS grid and FlexBox</b></p>
           </article>
         </section>
-        <section className='static-comp'>
-          <article className='dashb'/>
-          <video className='dashboard' autoPlay muted loop id='myVideo'>
-            <source src={dashboard} type='video/mp4'/>
-          </video>  
-        </section>
       </div>
-      <NavLink to='/portfolio/swapi' className='lastProject arrow'><a>Last</a></NavLink>
-      <li className='nextProject arrow disable'><a>Next</a></li>
+
     </div>
   )
 }

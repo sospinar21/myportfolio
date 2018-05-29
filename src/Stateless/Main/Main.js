@@ -2,60 +2,9 @@
 import React from 'react'
 import './Main.css'
 import Buttons from '../Buttons/Buttons'
+import {NavLink} from 'react-router-dom'
 
 const Main = () => {
-  const TxtRotate = (el, toRotate, period) => {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    tick();
-    this.isDeleting = false;
-  };
-
-  const tick = () => {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-    var delta = 300 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      this.loopNum++;
-      delta = 500;
-    }
-
-    setTimeout(function() {
-      tick();
-    }, delta);
-  };
-
-  const animation = () => {
-    var elements = document.getElementsByClassName('txt-rotate');
-    for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-rotate');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtRotate(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-
-  };
-
-  window.onload = animation;
   
   return (
     <div>
@@ -64,34 +13,27 @@ const Main = () => {
           <div className='wrapper'/>
           <div className='info-container'>
             <div className='myInfo'>
-              <h4>About Me.</h4>
+              <h1>Stephanie Ospina</h1>
               <p>Business oriented, tech driven <b>software developer</b> with a passion for designing and building solutions that make life easier for businesses and consumers.</p>   
             </div>    
-            <h1>Stephanie Ospina</h1>
-            {/* <h2>
-              <span
-                className='txt-rotate'
-                data-period='2000'
-                data-rotate='[ "Full Stack Developer", "Web Designer", "Artist" ]'/>
-            </h2> */}
             <ul className='social'>
               <a href='https://www.linkedin.com/in/stephanieospina10/' target='blank'><li className='linkedin'/></a>
               <a href='https://github.com/sospinar21' target='blank'><li className='github'/></a>
-              <a href='https://www.linkedin.com/in/stephanieospina10/' target='blank'><li className='email'/></a>
+              <NavLink to='contact'><li className='email'/></NavLink>
               
             </ul>
           </div>
         </section>
         <section className='pic-container'>
-          <div className='pic1'>
+          <NavLink to= './portfolio' className='pic1'>
             <div className='wrapper2'/>            
-          </div>
-          <div className='pic2'>
+          </NavLink>
+          <NavLink to= './portfolio' className='pic2'>
             <div className='wrapper2'/>            
-          </div>
-          <div className='pic3'>
+          </NavLink>
+          <NavLink to= './portfolio' className='pic3'>
             <div className='wrapper2'/>        
-          </div>
+          </NavLink>
         
         </section>
       </div>
