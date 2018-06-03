@@ -1,20 +1,24 @@
 /* transition: width .5s cubic-bezier(0.01, 0.74, 0.4, 1), height .5s .5s cubic-bezier(0.01, 0.74, 0.4, 1), background .3s linear; */
 .portfolio {
-padding: 5vh;
+padding: 50px;
 box-sizing: border-box;
 margin: auto;
 background-color: #d3d3d326;
 width: 92%;
-padding-top: 14vh !important;
+padding-top: 140px;
 overflow: hidden;
+}
+
+.padding {
+  padding: 30px
 }
 
 .e-book {
 width: 95%;
 margin: auto;
 background-color: black;
-height: 80vh;
-margin-bottom: 5vh;
+height: 800px;
+margin-bottom: 50px;
 background-image: url('./../../assets/e-book.png');
 background-size: cover;
 box-shadow: 2px 0px 20px #cecccc;  
@@ -25,7 +29,7 @@ width: 95%;
 margin: auto;
 display: flex;
 justify-content: space-between;
-margin-bottom: 5vh; 
+margin-bottom: 50px; 
 }
 
 .small-square h3 {
@@ -40,21 +44,21 @@ height: 100%;
 
 .small-square {
 flex: 40%;
-padding: 3vh 2vw;
+padding: 30px 20px;
 text-align: center;
 box-shadow: 2px 0px 20px #cecccc;
 }
 
 .portfolio h3 {
-font-size: 3vw;
+font-size: 30px;
 color: #9E9E9E; 
 font-weight: 300;
-margin-bottom: 3vh;
+margin-bottom: 30px;
 }
 
 .portfolio h4 {
-  font-size: 2vw;
-  margin-top: 3vh;
+  font-size: 20px;
+  margin-top: 30px;
   color: #9E9E9E; 
 font-weight: 300;
 letter-spacing: .2px;
@@ -62,7 +66,7 @@ letter-spacing: .2px;
   }
 
 .portfolio li {
-font-size: 1.5vw;
+font-size: 15px;
 list-style-type: none;
 color: #9E9E9E;
 letter-spacing: .4px;
@@ -85,7 +89,7 @@ margin:0;
 
 .big-square {
 flex: 60%;
-margin-left: 4vh;
+margin-left: 40px;
 box-shadow: 2px 0px 20px #cecccc;
 height: max-content; 
 }
@@ -134,7 +138,7 @@ width: 95%;
 margin: auto;
 justify-content: space-between;
 display: flex;
-margin-bottom: 5vh;
+margin-bottom: 50px;
 }
 
 .swapi-desc {
@@ -143,7 +147,7 @@ flex: 70%;
 
 .swapi-vid {
 margin: auto;
-margin-bottom: 4vh;
+margin-bottom: 40px;
 background-size: cover; 
 background-repeat: no-repeat; 
 box-shadow: 2px 0px 20px #cecccc;    
@@ -157,7 +161,7 @@ justify-content: space-around;
 
 .swapi-text {
 flex: 46%;
-padding: 4vh;
+padding: 40px;
 box-shadow: 2px 0px 20px #cecccc;    
 }
 
@@ -169,9 +173,9 @@ box-shadow: 2px 0px 20px #cecccc;
 background-size: cover;
 background-repeat: no-repeat;
 flex: 50%;
-margin-left: 4vh;
+margin-left: 40px;
 box-shadow: 2px 0px 20px #cecccc;
-padding: 5vh;
+padding: 50px;
 box-sizing: border-box;
 }
 
@@ -183,7 +187,7 @@ box-sizing: border-box;
 background-size: contain;
 background-repeat: no-repeat;
 flex: 30;
-margin-left: 4vh;
+margin-left: 40px;
 background-image: url('./../../assets/swapi-mob.png')
 }
 
@@ -193,33 +197,33 @@ justify-content: space-between;
 width: 95%;
 margin: auto;
 height: auto;
-margin-bottom: 4vh;
+margin-bottom: 40px;
 }
 
 .dance-app {
 background-image: url('./../../assets/Screen Shot 2018-05-03 at 7.30.54 AM copy.png');
 flex: 50;
-margin-right: 4vh;
+margin-right: 40px;
 background-size: cover; 
 background-repeat: no-repeat;
 box-shadow: 2px 0px 20px #cecccc;
-background-color: #000;      
+background-color: #000;
+height: 500px;      
 }
 
 .text {
   box-sizing: border-box;
-  padding: 4vh;
+  padding: 40px;
 flex: 20;
 background-color: white;
-box-shadow: 2px 0px 20px #cecccc;
-height: 30vw;   
+box-shadow: 2px 0px 20px #cecccc;  
 }
 
 .dashboard {
 flex: 50;
 background-size: cover; 
 background-repeat: no-repeat;  
-margin-left: 4vh;
+margin-left: 40px;
 box-shadow: 2px 0px 20px #cecccc; 
 width: 78%;
 
@@ -253,4 +257,15 @@ flex: 20;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(187, 163, 25); 
+}
+
+.movie-tracker {
+  background-image: url('./../../assets/movie-tracker.png');
+flex: 70;
+margin-left: 40px;
+background-size: cover; 
+background-repeat: no-repeat;
+box-shadow: 2px 0px 20px #cecccc;
+background-color: #000; 
+height: 550px;
 }

@@ -5,7 +5,7 @@ import Buttons from '../Buttons/Buttons';
 import ebook from '../../assets/e-book.mp4';
 import starWars from '../../assets/starwars copy.mov';
 import dashboard from '../../assets/ubs copy.mov';
-import { Redux, ReactLogo, Firebase } from '../../assets/logos'
+import { Redux, ReactLogo, Firebase, Scss, Postgres } from '../../assets/logos'
 
 export const eBook = () => {
   return (
@@ -24,7 +24,6 @@ export const eBook = () => {
             <p>This app was built for students to import their lessons, save notes, links and documents. </p>
             <br/>
             <p> Built with: <b> React, React-Router, Redux and Firebase </b></p>
-            <a className='link' href='https://github.com/sospinar21/e-planner' target='blank'>Link to Repo: https://github.com/sospinar21/e-planner </a>
             <h4>Winner of 2018 Turing code fair</h4>
           </article>
           <article className='big-square'>   
@@ -35,9 +34,27 @@ export const eBook = () => {
         </section>
       </div>
 
-      <div className='portfolio'>
+      <div className='portfolio padding'>
+        <div className='dev-logo-container'>
+          <Redux />
+          <ReactLogo />
+          <Scss />
+          <Postgres />
+        </div>
+        <section className='static-comp'>
+          <article className='text'> 
+            <h3>Movie Tracker</h3>
+            <p>Movie Tracker is a <b>React.js/Redux.js</b> app built with router and a Node.js/express back-end. The app allows users to browse recent movies and save them in their dashboards.</p>
+            <a className='link' href='https://github.com/sospinar21/movie-tracker' target='blank'>Link to Repo: https://github.com/sospinar21/movie-tracker </a>
+          </article>
+          <div className='movie-tracker' />     
+        </section>
+      </div>
+
+      <div className='portfolio padding'>
         <div className='dev-logo-container'>
           <ReactLogo />
+          <Scss />
           <Firebase />
         </div>
         <section className='swapi'>
@@ -64,8 +81,9 @@ export const eBook = () => {
           <article className='swapi-phone' /> 
         </section>
       </div>
-    
-      <div className='portfolio'>
+
+      <div className='portfolio padding'>
+        <h2> UX and Design </h2>
         <section className='static-comp'>
           <article className='dashb'/>
           <video className='dashboard' autoPlay muted loop id='myVideo'>
