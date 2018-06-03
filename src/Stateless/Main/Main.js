@@ -12,8 +12,10 @@ const Main = () => {
         <section className='firstSection' id='intro'>
           <div className='wrapper'/>
           <div className='info-container'>
-            <div className='myInfo'>
+            <div className='title'>
               <h1>Stephanie Ospina</h1>
+            </div>
+            <div className='myInfo'>
               <p>Business oriented, tech driven <b>software developer</b> with a passion for designing and building solutions that make life easier for businesses and consumers.</p>   
             </div>    
             <ul className='social'>
@@ -37,9 +39,12 @@ const Main = () => {
         
         </section>
       </div>
-      <Buttons />  
+      <div className='menu-main'>
+        <Buttons />
+      </div>  
     </div>    
   )
 }
+
 
 export default Main

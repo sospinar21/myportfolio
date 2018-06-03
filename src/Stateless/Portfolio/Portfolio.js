@@ -73,7 +73,7 @@ export const eBook = () => {
                   
                 </article>           
                 <article className='swapi-t'> 
-                  <p>An individual project for a Star Wars site. User can select a category of trivia they'd like to see, select favorites, and view favorites on a seperate screen. </p>
+                  <p>An individual project for a Star Wars site. User can select a category of trivia they'd like to see, select favorites, and view favorites on a separate screen. </p>
                 </article> 
               </article>
             </article>
@@ -83,7 +83,7 @@ export const eBook = () => {
       </div>
 
       <div className='portfolio padding'>
-        <h2> UX and Design </h2>
+        <h2 className='ux'> UX and Design </h2>
         <section className='static-comp'>
           <article className='dashb'/>
           <video className='dashboard' autoPlay muted loop id='myVideo'>

@@ -96,12 +96,11 @@ h1 :after, :before {
 .pic-container {
   width: 80%;
   position: absolute;
-  height: 30vh;
   overflow: hidden;
   z-index: 20;
   display: -ms-flexbox;
   display: flex;
-  bottom: 5vh;
+  bottom: 13vh;
   margin-left: 10%;
   margin-right: auto;
   -ms-flex-pack: justify;
@@ -127,9 +126,11 @@ h1 :after, :before {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  height: 260px;
+  height: 250px;
   cursor: pointer;
 }
+
+.title
 
 .pic1:hover {
   box-shadow: 0 0 80px 0 rgba(0,0,0,.1);
@@ -300,7 +301,7 @@ h3 {
 
   .contact-info {
     margin-top: 25px;
-    margin-left: 45%;
+    right: 5%;
     background-color: #000000c7;
     padding: 34px;
     position: absolute;
@@ -357,12 +358,19 @@ h3 {
   }
 
   .fire {
-    margin: -1.20px 10px 0;
+    margin: -12px 10px 0;
   }
 
   iframe {
     width: 100vw;
     height: inherit;
+  }
+
+  .menu-main {
+    position: absolute;
+    bottom: 0vh;
+    z-index: 80;
+    height: 80px;
   }
 
   .scss {
@@ -378,3 +386,55 @@ h3 {
     box-sizing: border-box;
     width: 60px;
   }
+
+  @media only screen and (max-width: 600px) {
+    .main-container {
+      display: block; 
+      background-size: cover;
+      height: auto;
+    }
+
+    .menu-main{
+      line-height: 3;
+    }
+
+    .info-container{
+      position: relative;
+      padding: 60px 0vh;
+      margin-bottom: 15px
+    }
+
+    .pic-container {
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .title h1 {
+      font-size: 60px
+    }
+
+    .wrapper {
+      height: 200%;
+    }
+
+    .firstSection{
+      background-size: cover;
+     height: auto;
+     margin-bottom: 15vh;
+    }
+
+    .pic1, .pic2, .pic3 {
+      margin: 5vh auto;
+      width: 100%
+    }
+
+    .menu{
+      width: 100%;
+      padding: 0;
+    }
+
+    .nav {
+      padding: 10px
+    }
+
+}

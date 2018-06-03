@@ -269,3 +269,100 @@ box-shadow: 2px 0px 20px #cecccc;
 background-color: #000; 
 height: 550px;
 }
+
+@media only screen and (max-width: 600px) { 
+
+  .e-book-desc{
+    display: block;
+  }
+
+  .e-book {
+    height: 238px;
+    width: 100%
+  }
+
+  .big-square {
+    margin-top: 40px;
+    margin-left: 0px
+  }
+
+  .swapi-info {
+    display: block
+  }
+
+  .swapi-t {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .static-comp{
+    display: block
+  }
+
+  .dance-app{
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 40px
+  }
+
+  .dashboard{
+    width: 100%;
+    margin-left: 0
+  }
+
+  .movie-tracker{
+    height: 200px;
+    margin: 40px 0px
+  }
+
+  .ux{
+    font-size: 40px;
+    margin: 10px auto;
+  }
+
+  .resume {
+    height: -webkit-fill-available;
+    width: 100%
+  }
+
+  .contact-top{
+    display: block;
+  }
+
+  .pic-steph{
+    width: 100%
+  }
+
+  .contact-info{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    right: 0;
+  }
+
+  .contact-bottom {
+    height: auto;
+  }
+
+  .logo {
+    display: none
+  }
+
+  .contact-wrapper h2{
+    margin: auto;
+  }
+
+  .left-box{
+    width: 100%;
+  }
+
+  .my-info{
+    width: 100%;
+    margin-left: 0;
+    padding: 0
+  }
+
+  iframe{
+    display:none
+  }
+}
