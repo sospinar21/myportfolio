@@ -29,7 +29,6 @@ background-color: hsla(0,0%,0%,0.4);
 
 .info-container {
   position: absolute;
-  padding-top: 50px;
   width: 100%;
 }
 
@@ -100,7 +99,7 @@ h1 :after, :before {
   z-index: 20;
   display: -ms-flexbox;
   display: flex;
-  bottom: 13vh;
+  bottom: 15vh;
   margin-left: 10%;
   margin-right: auto;
   -ms-flex-pack: justify;
@@ -126,7 +125,7 @@ h1 :after, :before {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  height: 250px;
+  height: 175px;
   cursor: pointer;
 }
 
@@ -208,7 +207,7 @@ h2 {
   }
 
 p {
-  font-size: 22px;
+  font-size: 18px;
   color: white;
   line-height: 1.8;
   word-spacing: 4.5px;
@@ -222,7 +221,7 @@ h3 {
   }
 
 .social li {
-  width: 80px;
+  width: 60px;
   height: 70px;
 }
 
@@ -236,7 +235,7 @@ h3 {
   background-image: url('./../../assets/linkedin.png');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 56px !important;
+  height: 47px !important;
   margin-top: 7px;
 }
   
@@ -253,7 +252,7 @@ h3 {
   width: 25%;
   margin: auto;
   list-style-type: none;
-  margin-top: 70px;
+  margin-top: 30px;
   }
 
   .contact-top {
@@ -434,7 +433,25 @@ h3 {
     }
 
     .nav {
-      padding: 10px
+      padding: 9px;
+      font-size:13px
+    }
+
+    .menu-main{
+      height: 60px;
+    }
+
+    .contact-wrapper h2{
+      font-size: 50px;
+    }
+
+    .header{
+      height: 50px;
+    }
+
+    .social{
+      width: 100%;
+      padding: 0
     }
 
 }
