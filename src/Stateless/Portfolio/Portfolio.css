@@ -5,8 +5,14 @@ box-sizing: border-box;
 margin: auto;
 background-color: #d3d3d326;
 width: 92%;
-padding-top: 140px;
+padding-top: 100px;
 overflow: hidden;
+}
+
+.portfolio h2{
+  margin: 0px auto 50px;
+  font-size: 70px;
+  height: 50px;
 }
 
 .padding {
@@ -17,7 +23,7 @@ overflow: hidden;
 width: 95%;
 margin: auto;
 background-color: black;
-height: 800px;
+height: 600px;
 margin-bottom: 50px;
 background-image: url('./../../assets/e-book.png');
 background-size: cover;
@@ -50,7 +56,7 @@ box-shadow: 2px 0px 20px #cecccc;
 }
 
 .portfolio h3 {
-font-size: 30px;
+font-size: 28px;
 color: #9E9E9E; 
 font-weight: 300;
 margin-bottom: 30px;
@@ -74,7 +80,7 @@ letter-spacing: .4px;
 }
 
 .portfolio p, .link{
-font-size: 18px;
+font-size: 14px;
 color: #9E9E9E; 
 line-height: 2;
 word-spacing: 0;
@@ -91,7 +97,7 @@ margin:0;
 flex: 60%;
 margin-left: 40px;
 box-shadow: 2px 0px 20px #cecccc;
-height: max-content; 
+height: inherit; 
 }
 
 .arrow {
@@ -208,7 +214,7 @@ background-size: cover;
 background-repeat: no-repeat;
 box-shadow: 2px 0px 20px #cecccc;
 background-color: #000;
-height: 500px;      
+height: 410px;      
 }
 
 .text {
@@ -267,7 +273,7 @@ background-size: cover;
 background-repeat: no-repeat;
 box-shadow: 2px 0px 20px #cecccc;
 background-color: #000; 
-height: 550px;
+height: 410px;
 }
 
 @media only screen and (max-width: 600px) { 
@@ -316,8 +322,7 @@ height: 550px;
   }
 
   .ux{
-    font-size: 40px;
-    margin: 10px auto;
+    display:none
   }
 
   .resume {
@@ -338,6 +343,10 @@ height: 550px;
     margin:0;
     padding: 0;
     right: 0;
+  }
+
+  .contact-info h5{
+    font-size: 18px
   }
 
   .contact-bottom {
@@ -368,5 +377,9 @@ height: 550px;
 
   .portfolio{
     padding:0
+  }
+
+  .contact-wrapper{
+    padding: 0
   }
 }
