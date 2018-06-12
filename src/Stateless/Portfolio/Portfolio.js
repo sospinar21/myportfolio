@@ -92,10 +92,6 @@ export const eBook = () => {
         </section>
         <section className='static-comp'>
           <article className='dance-app'/>
-          <article className='text'> 
-            <h3>Design and UX</h3>
-            <p>Projects built with <b>CSS grid and FlexBox</b></p>
-          </article>
         </section>
       </div>
 

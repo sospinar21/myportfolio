@@ -20,14 +20,16 @@ overflow: hidden;
 }
 
 .e-book {
-width: 95%;
-margin: auto;
-background-color: black;
-height: 600px;
-margin-bottom: 50px;
+
+  background-repeat: no-repeat;
+  width: 95%;
+  margin: auto;
+  height: 600px;
+  margin-bottom: 50px;
+  background-size: cover;
+  -webkit-box-shadow: 2px 0px 20px #cecccc;
+  box-shadow: 2px 0px 20px #cecccc;
 background-image: url('./../../assets/e-book.png');
-background-size: cover;
-box-shadow: 2px 0px 20px #cecccc;  
 }
 
 .e-book-desc {
@@ -209,12 +211,11 @@ margin-bottom: 40px;
 .dance-app {
 background-image: url('./../../assets/Screen Shot 2018-05-03 at 7.30.54 AM copy.png');
 flex: 50;
-margin-right: 40px;
 background-size: cover; 
 background-repeat: no-repeat;
 box-shadow: 2px 0px 20px #cecccc;
 background-color: #000;
-height: 410px;      
+height: 550px;      
 }
 
 .text {
